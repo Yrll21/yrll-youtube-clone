@@ -1,7 +1,8 @@
 import express from "express";
 import ffmpeg from "fluent-ffmpeg";
 
-const app = express()
+const app = express();
+app.use(express.json());
 
 app.post("/process-video", (req,res) => {
     const inputFilePath = req.body.inputFilePath
@@ -12,7 +13,7 @@ app.post("/process-video", (req,res) => {
     }
 
     ffmpeg(inputFilePath)
-        .outputOptions("-vf", "scale=-1:360") //360p
+        .outputOptions("-vf", "scale=-1:240") //360p
         .on("end", () => {
             res.status(200).send("Processing finished successfully")
         })

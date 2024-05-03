@@ -1,6 +1,9 @@
 // import express
 import express from "express";
 import ffmpeg from "fluent-ffmpeg";
+import { setUpDirectories } from "./storage";
+
+setUpDirectories();
 
 // create express app
 const app = express();

@@ -20,4 +20,8 @@
 - [x] Create Next App
 - [x] Create Navbar
 - [x] Add Firebase SDK with Auth
-- [ ] Add Sign In with Google
+- [x] Add Sign In with Google
+
+# Create Firestore
+- [x] Create Firestore
+- [] Add Create User Function

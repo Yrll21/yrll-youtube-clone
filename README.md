@@ -23,5 +23,6 @@
 - [x] Add Sign In with Google
 
 # Create Firestore
+
 - [x] Create Firestore
-- [] Add Create User Function
+- [x] Add Create User Function

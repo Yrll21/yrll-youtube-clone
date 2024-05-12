@@ -26,3 +26,11 @@
 
 - [x] Create Firestore
 - [x] Add Create User Function
+
+# Upload and Watch Videos
+
+- [] Add Upload Video Function
+- [] Add Upload Video Feature to Web App
+- [] Add Videos to Firestore
+- [] Add Get Videos Function
+- [] Show Videos in Web App

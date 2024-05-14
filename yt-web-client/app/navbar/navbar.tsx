@@ -6,6 +6,7 @@ import Link from "next/link";
 import SignIn from "./sign-in";
 import { onAuthStateChangedHelper } from "../firebase/firebase";
 import { User } from "firebase/auth";
+import Upload from "./upload";
 
 const NavBar = () => {
   // Init user state
@@ -23,7 +24,7 @@ const NavBar = () => {
       <Link href="/">
         <Image src="/youtube-logo.svg" alt="logo" width={90} height={90} />
       </Link>
-      {/* TODO: Add upload button if user is signed in */}
+      {user && <Upload />}
       <SignIn user={user} />
     </nav>
   );

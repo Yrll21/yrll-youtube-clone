@@ -30,7 +30,7 @@
 # Upload and Watch Videos
 
 - [x] Add Upload Video Function
-- [] Add Upload Video Feature to Web App
+- [x] Add Upload Video Feature to Web App
 - [] Add Videos to Firestore
 - [] Add Get Videos Function
 - [] Show Videos in Web App

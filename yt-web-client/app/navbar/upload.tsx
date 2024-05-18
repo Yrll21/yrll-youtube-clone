@@ -18,6 +18,7 @@ export default function Upload() {
       const response = await uploadVideo(file);
       alert(`File uploaded successfully. Server responded with: ${JSON.stringify(response)}`);
     } catch (error) {
+      console.log(error)
       alert(`Failed to upload file: ${error}`);
     }
   };

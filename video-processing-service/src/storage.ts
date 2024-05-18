@@ -28,7 +28,7 @@ export function setUpDirectories() {
 export function convertVideo(rawVideoName: string, processedVideoName: string) {
   return new Promise<void>((resolve, reject) => {
     ffmpeg(`${localRawVideoPath}/${rawVideoName}`)
-      .outputOptions("-vf", "scale=-1:360") // 360p
+      .outputOptions("-pix_fmt", "yuv420p", "-c:v", "libx264", "-crf", "18", "-preset", "slow", "-c:a", "copy") // 360p
       .on("end", () => {
         console.log("Video processing finished successfully");
         resolve();
@@ -40,6 +40,9 @@ export function convertVideo(rawVideoName: string, processedVideoName: string) {
       .save(`${localProcessedVideoPath}/${processedVideoName}`);
   });
 }
+
+
+
 
 /**
  * @param fileName - The name of the file to download from the

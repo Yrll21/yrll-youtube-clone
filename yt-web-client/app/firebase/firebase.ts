@@ -8,7 +8,7 @@ import {
   onAuthStateChanged,
   User,
 } from "firebase/auth";
-
+import { getFunctions } from "firebase/functions";
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA_mQZZm8LODK3BGlnhFO9lI6pjNHGtQJ4",
@@ -21,6 +21,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
+export const functions = getFunctions();
 
 /**
  * Signs the user in with Google Popup

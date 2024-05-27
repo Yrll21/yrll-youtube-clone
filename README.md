@@ -32,5 +32,5 @@
 - [x] Add Upload Video Function
 - [x] Add Upload Video Feature to Web App
 - [x] Add Videos to Firestore
-- [] Add Get Videos Function
+- [x] Add Get Videos Function
 - [] Show Videos in Web App

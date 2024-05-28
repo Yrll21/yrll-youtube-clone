@@ -1,12 +1,13 @@
 "use client";
-import React, { use } from "react";
+import React, { Suspense } from "react";
 
 import { useSearchParams } from "next/navigation";
 
 const Watch = () => {
   const videoPrefix =
     "https://storage.googleapis.com/yrll-yt-processed-videos/";
-  const videoSrc = useSearchParams().get("v");
+  const search = useSearchParams();
+  const videoSrc = search.get("v");
 
   return (
     <div>

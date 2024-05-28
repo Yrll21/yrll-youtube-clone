@@ -34,3 +34,8 @@
 - [x] Add Videos to Firestore
 - [x] Add Get Videos Function
 - [x] Show Videos in Web App
+
+# Conclusion
+
+- [] Deploy Web App
+- [] App Limitations
